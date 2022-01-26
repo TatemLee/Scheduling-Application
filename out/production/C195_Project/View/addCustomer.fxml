@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="316.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addCustomer">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" stroke="CORAL" strokeType="INSIDE" width="370.0" />
+        <Button disable="true" layoutX="6.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Customers" />
+        <Button disable="true" layoutX="86.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Appointments" />
+        <Button disable="true" layoutX="184.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Reports" />
+        <Button disable="true" layoutX="293.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Logout" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutX="-3.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="373.0" />
+      <Label layoutX="13.0" layoutY="37.0" text="Add New Customer:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="78.0" text="Name" />
+      <TextField fx:id="nameTextBox" layoutX="22.0" layoutY="103.0" promptText="John Doe" />
+      <TextField fx:id="phoneNumberTextBox" layoutX="196.0" layoutY="103.0" promptText="555-555-5555" />
+      <Label layoutX="22.0" layoutY="144.0" text="Address" />
+      <TextField fx:id="addressTextBox" layoutX="22.0" layoutY="171.0" promptText="123 ABC Street, White Plains" />
+      <Label layoutX="22.0" layoutY="210.0" />
+      <Label layoutX="200.0" layoutY="144.0" text="Postal Code" />
+      <TextField fx:id="postalCodeTextBox" layoutX="196.0" layoutY="171.0" promptText="AF19B" />
+      <Label layoutX="200.0" layoutY="78.0" text="Phone Number" />
+      <ComboBox fx:id="countryComboBox" layoutX="22.0" layoutY="235.0" onAction="#onCountrySelection" prefWidth="150.0" />
+      <Label layoutX="22.0" layoutY="210.0" text="Country" />
+      <Label layoutX="200.0" layoutY="210.0" text="First-Level" />
+      <ComboBox fx:id="firstLevelComboBox" disable="true" layoutX="196.0" layoutY="235.0" prefWidth="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutX="-3.0" layoutY="283.0" stroke="#ffa382" strokeType="INSIDE" width="373.0" />
+        <Button layoutX="242.0" layoutY="287.0" mnemonicParsing="false" onAction="#onClickConfirm" style="-fx-background-color: ff7f50;" text="Confirm" />
+        <Button layoutX="304.0" layoutY="287.0" mnemonicParsing="false" onAction="#onClickCancel" style="-fx-background-color: ff7f50;" text="Cancel" />
+    </children>
+</AnchorPane>

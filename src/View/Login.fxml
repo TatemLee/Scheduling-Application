@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: ffa382;" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="198.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="300.0" minWidth="102.0" prefWidth="300.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="310.0" style="-fx-background-color: ffa382;" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="loginButton" defaultButton="true" layoutX="113.0" layoutY="192.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: ff7f50;" text="Login" AnchorPane.leftAnchor="113.0" />
+            <TextField fx:id="userIdTextBox" layoutX="76.0" layoutY="90.0" AnchorPane.leftAnchor="76.0" />
+            <TextField fx:id="passwordTextBox" layoutX="76.0" layoutY="150.0" AnchorPane.leftAnchor="76.0" />
+            <Label fx:id="passwordLabel" layoutX="76.0" layoutY="133.0" text="Password:" AnchorPane.leftAnchor="76.0" />
+            <Label fx:id="userIDLabel" layoutX="76.0" layoutY="73.0" text="User ID:" AnchorPane.leftAnchor="76.0" />
+            <Label fx:id="currentUserLocationLabel" layoutY="252.0" text="Current User Location:" AnchorPane.leftAnchor="0.0" />
+            <Label fx:id="currentUserLocation" layoutX="193.0" layoutY="252.0" text="Default" AnchorPane.leftAnchor="193.0" />
+            <Label fx:id="loginHeader" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="24.0" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>

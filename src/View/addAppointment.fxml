@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="493.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addAppointment">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" stroke="CORAL" strokeType="INSIDE" width="370.0" />
+        <Button disable="true" layoutX="6.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Customers" />
+        <Button disable="true" layoutX="86.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Appointments" />
+        <Button disable="true" layoutX="184.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Reports" />
+        <Button disable="true" layoutX="293.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: ffa382;" text="Logout" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutX="-3.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="373.0" />
+        <Label layoutX="13.0" layoutY="37.0" text="Add New Appointment:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="78.0" text="Appointment ID" />
+        <TextField fx:id="appointmentIDTextBox" disable="true" layoutX="22.0" layoutY="103.0" promptText="Auto Generation Enabled" />
+        <TextField fx:id="titleTextBox" layoutX="196.0" layoutY="103.0" promptText="Title" />
+        <Label layoutX="22.0" layoutY="144.0" text="Description" />
+        <TextField fx:id="descriptionTextBox" layoutX="22.0" layoutY="171.0" prefWidth="149.0" promptText="Meeting with Client..." />
+        <Label layoutX="22.0" layoutY="210.0" />
+        <Label layoutX="200.0" layoutY="144.0" text="Location" />
+        <TextField fx:id="locationTextBox" layoutX="196.0" layoutY="171.0" promptText="Downtown Office..." />
+        <Label layoutX="200.0" layoutY="78.0" text="Title" />
+        <ComboBox fx:id="contactComboBox" disable="true" layoutX="22.0" layoutY="290.0" prefHeight="25.0" prefWidth="23.0" promptText="#" />
+        <ComboBox fx:id="contactNameComboBox" layoutX="72.0" layoutY="290.0" onAction="#onSelectContactName" prefHeight="25.0" prefWidth="100.0" />
+        <Label layoutX="22.0" layoutY="265.0" text="Contact" />
+        <Label layoutX="202.0" layoutY="265.0" text="Customer ID" />
+        <ComboBox fx:id="customerIdComboBox" layoutX="197.0" layoutY="290.0" prefWidth="150.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutX="-1.0" layoutY="461.0" stroke="#ffa382" strokeType="INSIDE" width="373.0" />
+        <Button layoutX="238.0" layoutY="465.0" mnemonicParsing="false" onAction="#onClickConfirm" style="-fx-background-color: ff7f50;" text="Confirm" />
+        <Button layoutX="306.0" layoutY="465.0" mnemonicParsing="false" onAction="#onClickCancel" style="-fx-background-color: ff7f50;" text="Cancel" />
+      <Label layoutX="22.0" layoutY="202.0" text="Type" />
+      <TextField fx:id="typeTextBox" layoutX="22.0" layoutY="227.0" prefWidth="149.0" promptText="Planning Session..." />
+      <Label layoutX="193.0" layoutY="202.0" text="User ID" />
+      <TextField fx:id="userIdTextBox" disable="true" layoutX="197.0" layoutY="227.0" prefWidth="149.0" promptText="Auto Complete Enabled" />
+      <DatePicker fx:id="dateOfAppointmentPicker" layoutX="93.0" layoutY="349.0" />
+      <Label layoutX="124.0" layoutY="324.0" text="Date of Appointment" />
+      <Label layoutX="37.0" layoutY="390.0" text="Start Time" />
+      <Label layoutX="40.0" layoutY="430.0" text="End Time" />
+      <ComboBox fx:id="startHourComboBox" layoutX="108.0" layoutY="386.0" prefHeight="25.0" prefWidth="141.0" promptText="Default" />
+      <ComboBox fx:id="endHourComboBox" layoutX="108.0" layoutY="426.0" prefHeight="25.0" prefWidth="141.0" promptText="Default" />
+
+    </children>
+</AnchorPane>

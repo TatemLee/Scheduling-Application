@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.customerScreen">
+    <children>
+        <TableView fx:id="customerTable" layoutY="66.0" prefHeight="437.0" prefWidth="640.0">
+            <columns>
+                <TableColumn fx:id="customerIdCol" prefWidth="78.0" text="Customer ID" />
+                <TableColumn fx:id="nameCol" prefWidth="98.0" text="Name" />
+                <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="117.0" text="Address" />
+                <TableColumn fx:id="postalCodeCol" text="Postal Code" />
+                <TableColumn fx:id="divisionCol" minWidth="0.0" prefWidth="61.0" text="Division" />
+                <TableColumn fx:id="countryCol" minWidth="0.0" prefWidth="81.0" text="Country" />
+                <TableColumn fx:id="phoneNumberCol" prefWidth="123.0" text="Phone Number" />
+            </columns>
+        </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" stroke="CORAL" strokeType="INSIDE" width="640.0" />
+      <Button layoutX="6.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickCustomers" style="-fx-background-color: ffa382;" text="Customers" />
+      <Button layoutX="86.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickAppointments" style="-fx-background-color: ffa382;" text="Appointments" />
+      <Button layoutX="184.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickReports" style="-fx-background-color: ffa382;" text="Reports" />
+      <Button layoutX="572.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickLogout" style="-fx-background-color: ffa382;" text="Logout" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="640.0" />
+      <Button layoutX="51.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickAddCustomer" style="-fx-background-color: ff7f50;" text="Add Customer" />
+      <Button layoutX="148.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickUpdateCustomer" style="-fx-background-color: ff7f50;" text="Update Customer" />
+      <Button layoutX="262.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickDeleteCustomer" style="-fx-background-color: ff7f50;" text="Delete Customer" />
+    </children>
+</AnchorPane>

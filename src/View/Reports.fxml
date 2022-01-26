@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="448.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Reports">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9d827e" height="35.0" layoutY="101.0" stroke="#ff9d827d" strokeType="INSIDE" width="950.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9f82c2" height="35.0" layoutY="66.0" stroke="#ff9f82c2" strokeType="INSIDE" width="950.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" stroke="CORAL" strokeType="INSIDE" width="950.0" />
+        <Button layoutX="6.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickCustomers" style="-fx-background-color: ffa382;" text="Customers" />
+        <Button layoutX="86.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickAppointments" style="-fx-background-color: ffa382;" text="Appointments" />
+        <Button layoutX="184.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickReports" style="-fx-background-color: ffa382;" text="Reports" />
+        <Button layoutX="882.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickLogout" style="-fx-background-color: ffa382;" text="Logout" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="950.0" />
+      <ComboBox fx:id="typeComboBox" layoutX="187.0" layoutY="37.0" onAction="#onSelectType" prefWidth="150.0" promptText="Type" />
+      <ComboBox fx:id="monthComboBox" layoutX="343.0" layoutY="37.0" onAction="#onSelectMonth" prefWidth="150.0" promptText="Month" />
+      <Label layoutX="18.0" layoutY="37.0" text="Total Appointments By:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="appointmentTotal" alignment="TOP_LEFT" layoutX="538.0" layoutY="37.0" text="#">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="506.0" layoutY="32.0" text="=">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="71.0" text="Total Customers By:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="countryComboBox" layoutX="187.0" layoutY="71.0" onAction="#onSelectCountry" prefWidth="150.0" promptText="Country" />
+      <ComboBox fx:id="regionComboBox" disable="true" layoutX="343.0" layoutY="71.0" onAction="#onSelectRegion" prefWidth="150.0" promptText="Region" />
+      <Label layoutX="506.0" layoutY="66.0" text="=">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerTotal" alignment="TOP_LEFT" layoutX="538.0" layoutY="71.0" text="#">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="contactNameComboBox" layoutX="241.0" layoutY="106.0" onAction="#onSelectContactName" prefWidth="150.0" promptText="Contact" />
+      <ComboBox fx:id="contactComboBox" disable="true" layoutX="188.0" layoutY="106.0" prefHeight="25.0" prefWidth="38.0" promptText="#" />
+      <Label layoutX="24.0" layoutY="106.0" text="Scheduler by Contact:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+        <TableView fx:id="appointmentTable" layoutY="134.0" prefHeight="313.0" prefWidth="950.0">
+            <columns>
+                <TableColumn fx:id="appointmentIDCol" prefWidth="101.25" text="Appointment ID" />
+                <TableColumn fx:id="titleCol" minWidth="0.0" prefWidth="91.0" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="114.0" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="81.0" text="Location" />
+                <TableColumn fx:id="contactCol" prefWidth="66.0" text="Contact" />
+                <TableColumn fx:id="typeCol" prefWidth="84.0" text="Type" />
+                <TableColumn fx:id="endDateTimeCol" prefWidth="137.0" text="End Date/Time" />
+                <TableColumn fx:id="startDateTimeCol" prefWidth="136.0" text="Start Date/Time" />
+                <TableColumn fx:id="customerIDCol" minWidth="1.0" text="Customer ID" />
+                <TableColumn fx:id="userIDCol" minWidth="0.0" prefWidth="56.0" text="User ID" />
+
+
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

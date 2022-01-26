@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="398.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.appointmentScreen">
+    <children>
+        <TableView fx:id="appointmentTable" layoutY="98.0" prefHeight="305.0" prefWidth="950.0">
+            <columns>
+                <TableColumn fx:id="appointmentIDCol" prefWidth="101.25" text="Appointment ID" />
+                <TableColumn fx:id="titleCol" minWidth="0.0" prefWidth="91.0" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="114.0" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="81.0" text="Location" />
+                <TableColumn fx:id="contactCol" prefWidth="66.0" text="Contact" />
+                <TableColumn fx:id="typeCol" prefWidth="84.0" text="Type" />
+                <TableColumn fx:id="startDateTimeCol" prefWidth="136.0" text="Start Date/Time" />
+                <TableColumn fx:id="endDateTimeCol" prefWidth="137.0" text="End Date/Time" />
+                <TableColumn fx:id="customerIDCol" minWidth="1.0" text="Customer ID" />
+                <TableColumn fx:id="userIDCol" minWidth="0.0" prefWidth="56.0" text="User ID" />
+
+            </columns>
+        </TableView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" stroke="CORAL" strokeType="INSIDE" width="950.0" />
+        <Button layoutX="6.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickCustomers" style="-fx-background-color: ffa382;" text="Customers" />
+        <Button layoutX="86.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickAppointments" style="-fx-background-color: ffa382;" text="Appointments" />
+        <Button layoutX="184.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickReports" style="-fx-background-color: ffa382;" text="Reports" />
+        <Button fx:id="logoutButton" layoutX="875.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickLogout" style="-fx-background-color: ffa382;" text="Logout" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="33.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="950.0" />
+        <Button fx:id="addAppointmentButton" layoutX="51.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickAddAppointment" style="-fx-background-color: ff7f50;" text="Add Appointment" />
+        <Button fx:id="updateAppointmentButton" layoutX="169.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickUpdateAppointment" style="-fx-background-color: ff7f50;" text="Update Appointment" />
+        <Button fx:id="deleteAppointmentButton" layoutX="305.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickDeleteAppointment" style="-fx-background-color: ff7f50;" text="Delete Appointment" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa1828f" height="33.0" layoutY="66.0" stroke="#ffa182" strokeType="INSIDE" width="950.0" />
+      <Label fx:id="filterAppointmentsLabel" layoutX="96.0" layoutY="70.0" text="Filter Appointments By:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="allAppointmentsRadio" layoutX="277.0" layoutY="74.0" mnemonicParsing="false" onAction="#toggleAll" selected="true" text="All Appointments">
+         <toggleGroup>
+            <ToggleGroup fx:id="filterRadio" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="weekRadio" layoutX="404.0" layoutY="74.0" mnemonicParsing="false" onAction="#toggleWeek" text="Week" toggleGroup="$filterRadio" />
+      <RadioButton fx:id="monthRadio" layoutX="475.0" layoutY="74.0" mnemonicParsing="false" onAction="#toggleMonth" text="Month" toggleGroup="$filterRadio" />
+      <Button fx:id="changeAppointmentTimeButton" layoutX="435.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickChangeAppointmentTime" style="-fx-background-color: ff7f50;" text="Change Appointment Time" />
+      <ComboBox fx:id="timeStartChangeComboBox" disable="true" layoutX="601.0" layoutY="37.0" opacity="0.0" prefHeight="25.0" prefWidth="73.0" promptText="Start" />
+      <ComboBox fx:id="timeEndChangeComboBox" disable="true" layoutX="681.0" layoutY="37.0" opacity="0.0" prefHeight="25.0" prefWidth="73.0" promptText="End" />
+      <Button fx:id="confirmButton" disable="true" layoutX="776.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickConfirm" opacity="0.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: ff7f50;" text="Confirm" />
+      <Button fx:id="cancelButton" disable="true" layoutX="856.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickCancel" opacity="0.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: ff7f50;" text="Cancel" />
+    </children>
+</AnchorPane>

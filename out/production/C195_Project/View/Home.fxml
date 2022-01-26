@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="158.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Home">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d75d35" height="40.0" layoutY="-2.0" stroke="#d75d35" strokeType="INSIDE" width="406.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="137.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="137.0" layoutX="275.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa382" height="137.0" layoutX="138.0" layoutY="33.0" stroke="#ffa382" strokeType="INSIDE" width="130.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORAL" height="33.0" layoutY="30.0" stroke="CORAL" strokeType="INSIDE" width="406.0" />
+        <Button layoutX="29.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClickCustomers" style="-fx-background-color: ffa382;" text="Customers" />
+        <Button layoutX="157.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClickAppointments" style="-fx-background-color: ffa382;" text="Appointments" />
+        <Button layoutX="312.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClickReports" style="-fx-background-color: ffa382;" text="Reports" />
+      <Label fx:id="upcomingAppointmentsLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="4.0" prefHeight="25.0" prefWidth="399.0" text="No Upcoming Appointments" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="70.0" text=" View Customers">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="147.0" layoutY="70.0" text=" View Appointments">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+
+      <Label layoutX="292.0" layoutY="70.0" text="View Reports By...">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="95.0" text="Add Customers">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="120.0" text="Update Customers">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="145.0" text="Delete Customers">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="151.0" layoutY="95.0" text="Add Appointments">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="120.0" text="Update Appointments">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="145.0" text="Delete Appointments">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="95.0" text="Type/Month">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="120.0" text="Country/Region">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="145.0" text="Contact">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
